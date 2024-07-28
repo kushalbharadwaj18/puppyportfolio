@@ -40,7 +40,7 @@
 		}
 
 		.servicesText.card {
-			height: 280px;
+			height: 370px;
 			cursor: pointer;
 		}
 
@@ -93,13 +93,97 @@
 			background-color: #808080;
 			text-align: center;
 		}
+		.slider-container {
+            width: 300px;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        input[type="range"] {
+			 -webkit-appearance: none; 
+            /*width: 400px;
+			height: 10px;
+            pointer-events: none; 
+			color: blue;/* Makes the slider static */
+			width: 400px;
+  height: 10px;
+  background: #ddd;
+  border-radius: 0px; /* Slider track border radius */
+  outline: none;
+  background: lightgrey;
+  pointer-events: none;
+  /*background: linear-gradient(to right, blue 75%, gray 75%);*/
+
+        }
+		input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Remove default styling */
+  color: blue;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #333;
+  border-radius: 100%; /* Thumb border radius */
+  cursor: default;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #333;
+  border-radius: 50%; /* Thumb border radius */
+  cursor: default;
+}
+
+		.skills-div {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			flex-wrap: wrap;
+			background-color: white;
+			padding-top: 30px;
+			padding-bottom: 30px;
+			padding-right: 10px;
+			box-shadow: 1px 1px 10px lightgray;
+			margin-bottom: 30px;
+		}
+		.item:hover {
+			border-bottom: 1px solid white;
+		}
+		.leetcode-img {
+			width: 100px;
+		}
+		.leetcode-img-div {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.lets-go-button {
+			color: white;
+			background-color: grey;
+			border-radius: 7px;
+			border: none;
+			padding: 7px 10px;
+		}
+		.lets-go-a {
+			color: white;
+			text-decoration: none;
+		}
+		.project1-img {
+			width: 100%;
+			height: 180px;
+		}
+		.card-div {
+			/*background-color: #0DCAF0;
+			/*background-color: #0F0F0F;*/
+			background-color: lightgray;
+		}
 	</style>
 </head>
 
 <body>
 	<nav class="navbar navbar-expand-lg fixed-top navbarScroll">
 		<div class="container">
-			<a class="navbar-brand" href="#" style="color: white">Shivanvitha Estari</a>
+			<a class="navbar-brand" href="#" style="color: white">KushalFolio</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
 				aria-label="Toggle navigation">
@@ -107,19 +191,19 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ms-auto">
-					<li class="nav-item active">
+					<li class="nav-item active item">
 						<a class="nav-link" href="#home" style="color: white">Home</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item item">
 						<a class="nav-link" href="#about" style="color: white">About</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item item">
 						<a class="nav-link" href="#services" style="color: white">Services</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item item">
 						<a class="nav-link" href="#portfolio" style="color: white">Portfolio</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item item">
 						<a class="nav-link" href="#contact" style="color: white">Contact</a>
 					</li>
 				</ul>
@@ -130,76 +214,184 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-					<h2 class="hero_title">Hi, it's me Shivanvitha Estari</h2>
-					<p class="hero_desc">I am a professional freelancer in Hyderabad City</p>
+					<h2 class="hero_title">Hi, it's me Kushal Bharadwaj Estari</h2>
+					<p class="hero_desc">I am a Passionate Full Stack Web Developer and Machine Learning Enthusiastic</p>
 				</div>
 			</div>
 		</div>
 	</section>
 	<section id="about">
 		<div class="container mt-4 pt-4">
-			<h1 class="text-center">About Me</h1>
+			<h1 class="text-center"><b>About Me</b></h1>
 			<div class="row mt-4">
 				<div class="col-lg-4">
-					<img src="c:\Users\SHIVANVITHA ESTARI\Documents\shivanvithaEstari_photo.jpg"
+					<img src="https://portfolio-keor.onrender.com/assets/img/profile.png"
 						class="imageAboutPage" alt="">
 				</div>
 
 				<div class="col-lg-8">
-					<p> I am a dedicated writer with a passion for crafting engaging and meaningful content. I excel in producing high-quality work across a range of genres and platforms. Whether it's storytelling, article writing, blogging, or creative fiction, I bring a unique voice and perspective to each piece.
-						My work is characterized by thorough research, attention to detail, and a commitment to authenticity. I enjoy exploring diverse topics and connecting with readers through clear, compelling narratives. I believe in the power of words to inspire, inform, and entertain, and I strive to create content that resonates deeply with audiences.
-				
-						Let's collaborate and bring your ideas to life with words that make an impact!
-						 
-					</p>
+					<p>I am a dedicated MERN stack and machine learning developer with a strong passion for creating impactful digital solutions. With expertise in MongoDB, Express.js, React, and Node.js, I excel in building responsive and efficient web applications. My projects showcase a range of dynamic features, highlighting my ability to deliver intuitive user experiences.</p>
 					<div class="row mt-3">
 						<div class="col-md-6">
 							<ul>
-								<li>Name: Shivanvitha Estari</li>
+								<li>Name: Kushal Bharadwaj Estari</li>
 								<li>Age: 20</li>
-								<li>Occupation: Writer</li>
-
+								<li>Occupation: Software Developer</li>
 							</ul>
 						</div>
-
 					</div>
 					<div class="row mt-3">
-						<p> My writing journey has been fueled by a fascination with the human experience and a desire to explore the intricate layers of emotion, conflict,and triumph. I believe that every story has the power to transport readers to new worlds, challenge their perceptions, and evoke profound emotions.
+						<p>In addition to my full-stack development skills, I am well-versed in machine learning, leveraging tools like TensorFlow and scikit-learn to design and implement robust models. I enjoy tackling challenging problems and continuously strive to expand my knowledge and expertise in both fields. My goal is to innovate and contribute to projects that drive meaningful change.
 						</p>
 					</div>
 				</div>
 			</div>
 	</section>
+	<section id="skills">
+	    <div class="container">
+		   <div class="container">
+		   <h1 class="text-center"><b>Skills</b></h1>
+		      <div class="skills-div">
+		      <div>
+					<div>
+						<h6>HTML 80%</h6>
+						<input type="range" id="slider" min="0" max="100" value="80">
+					</div>
+					<div>
+						<h6>CSS 80%</h6>
+						<input type="range" id="slider" min="0" max="100" value="80">
+					</div>
+					<div>
+						<h6>JAVASCRIPT 75%</h6>
+						<input type="range" id="slider" min="0" max="100" value="75">
+					</div>
+					<div>
+						<h6>MONGODB 75%</h6>
+						<input type="range" id="slider" min="0" max="100" value="75">
+					</div>
+					<div>
+						<h6>REACTJS 80%</h6>
+						<input type="range" id="slider" min="0" max="100" value="80">
+					</div>
+					<div>
+						<h6>JAVA 65%</h6>
+						<input type="range" id="slider" min="0" max="100" value="65">
+					</div>
+			   </div>
+                  <div>
+					<div>
+						<h6>EXPRESSJS 75%</h6>
+						<input type="range" id="slider" min="0" max="100" value="75">
+					</div>
+					<div>
+						<h6>NODEJS 75%</h6>
+						<input type="range" id="slider" min="0" max="100" value="75">
+					</div>
+					<div>
+						<h6>MACHINE LEARNING 70%</h6>
+						<input type="range" id="slider" min="0" max="100" value="70">
+					</div>
+					<div>
+						<h6>MYSQL 70%</h6>
+						<input type="range" id="slider" min="0" max="100" value="70">
+					</div>
+					<div>
+						<h6>GIT & GITHUB 65%</h6>
+						<input type="range" id="slider" min="0" max="100" value="65">
+					</div>
+					<div>
+						<h6>PYTHON 65%</h6>
+						<input type="range" id="slider" min="0" max="100" value="65">
+					</div>
+		          </div>
+		   </div>
+		  </div>
+		</div>
+	</section>
 	<section id="services">
 		<div class="container">
-			<h1 class="text-center">Services</h1>
+			<h1 class="text-center"><b>CODESPHERE</b></h1>
+			<p class="text-center sentence">Here, we go with my coding platforms</p>
 			<div class="row services-div">
 				<div class="col-lg-4 mt-4">
 					<div class="card servicesText">
 						<div class="card-body">
-							<i class="fas servicesIcon fa-clock"></i>
-							<h4 class="card-title mt-3 text-center">Creative Writing</h4>
-							<p class="card-text mt-3 text-center"> I offer short stories, fiction and non-fiction, screen plays, ghost writing services helping others bring their stories to life with authenticity and flair. Let's connect and create something magical together.
+							<!--<i class="fas servicesIcon fa-clock"></i>-->
+							<div class="leetcode-img-div">
+							    <img class="leetcode-img" src="https://portfolio-keor.onrender.com/assets/img/leetcode.png"/>
+							</div>
+							<h4 class="card-title mt-3 text-center">LEETCODE</h4>
+							<p class="card-text mt-3 text-center">Hello there! 👋 , I have successfully tackled over 250 coding challenges, honing my skills in algorithms and data structures. Achieving the coveted 100 Days Badge is a testament to my dedication and consistent commitment to the art of problem-solving.
 							</p>
+							<div class="text-center">
+							   <button class="lets-go-button"><a class="lets-go-a" href="https://leetcode.com/u/Kushal_bharadwaj-estari/">Let's go >></a></button>
+						    </div>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 mt-4">
 					<div class="card servicesText">
 						<div class="card-body">
-							<i class='fas servicesIcon fa-layer-group'></i>
-							<h4 class="card-title mt-3 text-center">Script and screenplay writing</h4>
-							<p class="card-text mt-3 text-center">I offer movie scripts, tv scripts, video script, podcast scripts services. I also offer writing subtitles for films, short films, videos, etc. 
-								I worked for various films with writing subtitles such as Love Mouly, Andari Katha Inthe, Sri Sri Sri Raja vaaru, Pourusham, Premaku Jai, etc.
+						    <div class="leetcode-img-div">
+						       <img class="leetcode-img" src="https://portfolio-keor.onrender.com/assets/img/github.jpg" />
+							</div>
+							<!--<i class='fas servicesIcon fa-layer-group'></i>-->
+							<h4 class="card-title mt-3 text-center">GITHUB</h4>
+							<p class="card-text mt-3 text-center">Diverse project portfolio, including projects using HTML, CSS and games using Javascript and many MERN stack projects including e-portal for case management for pre-trial conference and many other projects.
 							</p>
+							<div class="text-center">
+							   <button class="lets-go-button"><a class="lets-go-a" href="https://github.com/Rahulchaudhary792">Let's go >></a></button>
+						    </div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+	<section>
+	    <div class="container mt-4">
+		    <h1 class="text-center"><b>PROJECTS</b></h1>
+			<p class="text-center">Here, we go with my projects</p>
+			<section>
+			    <div class="row services-div">
+				<div class="col-lg-4 mt-4">
+					<div class="card servicesText">
+						<div class="card-body card-div">
+							<!--<i class="fas servicesIcon fa-clock"></i>-->
+							<div class="leetcode-img-div">
+							    <img class="project1-img" src="project1.png"/>
+							</div>
+							<h4 class="card-title mt-3 text-center"><b>E-portal for Case Management</b></h4>
+							<p class="card-text mt-3 text-center">JS, HTML, CSS, NODEJS, EXPRESSJS, MONGODB, REACTJS
+							</p>
+							<div class="text-center">
+							   <button class="lets-go-button"><a class="lets-go-a" href="https://github.com/Hariabc/my">GITHUB LINK</a></button>
+						    </div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 mt-4">
+					<div class="card servicesText">
+						<div class="card-body card-div">
+						    <div class="leetcode-img-div">
+						       <img class="project1-img" src="project2.png" />
+							</div>
+							<!--<i class='fas servicesIcon fa-layer-group'></i>-->
+							<h4 class="card-title mt-3 text-center"><b>Plagiarism Detection System</b></h4>
+							<p class="card-text mt-3 text-center">HTML, CSS, JS, MONGODB, NODEJS, EXPRESSJS, REACTJS, MACHINE LEARNING
+							</p>
+							<div class="text-center">
+							   <button class="lets-go-button"><a class="lets-go-a" href="https://github.com/Rahulchaudhary792/plagarism">GITHUB LINK</a></button>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</section>
+		</div>
+	</section>
 	<section id="contact">
-		<div class="container mt-3 contactContent">
+		<div class="container mt-3 contactContent mb-5">
 			<h1 class="text-center">Contact Me</h1>
 
 			<div class="row mt-4">
@@ -208,7 +400,7 @@
 					<div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
 						<div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;">
 							<iframe style="height:100%;width:100%;border:0;" frameborder="0"
-								src="https://www.google.com/maps/embed/v1/place?q=new+york&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+								src="https://www.google.com/maps/embed/v1/place?q=hyderabad+narayanaguda&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
 							</iframe>
 						</div>
 						<a class="googlemaps-html" href="https://www.embed-map.com"
@@ -223,7 +415,6 @@
 						</style>
 					</div>
 				</div>
-
 				<div class="col-lg-6">
 					<!-- form fields -->
 					<form>
@@ -236,12 +427,13 @@
 						</div>
 					</form>
 					<button type="button" class="btn btn-success mt-3">Contact Me</button>
-
 				</div>
-
 			</div>
 		</div>
 	</section>
+	<footer class="bg-dark w-100 h-100">
+	    <h6 class="text-center text-white">Copyright © <b>Kushal Bharadwaj Estari</b></h6>
+	</footer>
 </body>
 <script src="./script.js">
 </script>
@@ -251,5 +443,4 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
 	integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
 	crossorigin="anonymous"></script>
-
 </html>
